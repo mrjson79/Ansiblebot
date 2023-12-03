@@ -1,9 +1,0 @@
-- name: Setup Ubuntu system - VM
-  hosts: ubuntu_vm
-  roles:
-    - common
-    - linux
-    - linux_ubuntu
-    - linux_ubuntu_vm
-    - common_nvim
-    - common_post
