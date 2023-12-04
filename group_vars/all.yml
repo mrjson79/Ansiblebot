@@ -3,62 +3,24 @@ brew_macos:
   - ansible-language-server
   - ansible-lint
   - asciinema
-  - bash
-  - bash-language-server
+  - btop
   - coreutils
   - curl
   - dialog
   - diffutils
-  - docker
-  - docker-compose
-  - docker-credential-helper
-  - entr
   - fd
-  - figlet
-  - flake8
   - fzf
   - gawk
   - git
   - git-filter-repo
-  - gnu-sed
-  - gnupg
-  - golang
   - grep
-  - html2text
-  - htop
   - less
-  - lua
-  - lua-language-server
-  - lynx
-  - neovim
-  - nmap
-  - nnn
-  - node
   - openssh
-  - pandoc
-  - parallel
-  - perl
-  - pinentry-mac
-  - pylint
-  - pyright
-  - python
-  - qemu
-  - ripgrep
-  - rsync
-  - ruby
-  - rustup-init
-  - scalene
   - shellcheck
-  - tidy-html5
-  - tmux
-  - tmux-xpanes
   - tree
   - vim
   - watch
   - wget
-  - wireshark
-  - yaml-language-server
-  - yamllint
   - zsh
   - zsh-autosuggestions
 
@@ -91,11 +53,8 @@ brew_macos_work:
   - yq
 
 cask_macos:
-  - dropbox
-  - hammerspoon
   - rancher
   - the-unarchiver
-  - utm
   - visual-studio-code
 
 cask_macos_root:
@@ -113,7 +72,9 @@ cask_macos_home_root:
 cask_macos_work:
   - bitwarden
   - slack
-
+  - duckduckgo
+  - lastpass
+  
 #cask_macos_work_root:
 #  - x
 
@@ -208,12 +169,12 @@ linuxbrew_linux:
 #  - x
 
 
-go_common:
-  - github.com/go-delve/delve/cmd/dlv@latest
-  - golang.org/x/tools/cmd/godoc@latest
-  - golang.org/x/tools/cmd/goimports@latest
-  - golang.org/x/tools/gopls@latest
-  - honnef.co/go/tools/cmd/staticcheck@latest
+# go_common:
+#   - github.com/go-delve/delve/cmd/dlv@latest
+#   - golang.org/x/tools/cmd/godoc@latest
+#   - golang.org/x/tools/cmd/goimports@latest
+#   - golang.org/x/tools/gopls@latest
+#   - honnef.co/go/tools/cmd/staticcheck@latest
 
 #go_macos:
 #  - x
@@ -240,8 +201,8 @@ go_common:
 pip_common:
   - requests
 
-pip_macos:
-  - docker
+# pip_macos:
+#   - docker
 
 #pip_macos_home:
 #  - x
