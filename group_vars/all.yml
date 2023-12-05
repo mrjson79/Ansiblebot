@@ -75,6 +75,7 @@ cask_macos_work:
   - duckduckgo
   - lastpass
   - microsoft-remote-desktop
+  - vmware-fusion
 
 #cask_macos_work_root:
 #  - x
