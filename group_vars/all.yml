@@ -74,7 +74,8 @@ cask_macos_work:
   - slack
   - duckduckgo
   - lastpass
-  
+  - microsoft-remote-desktop
+
 #cask_macos_work_root:
 #  - x
 

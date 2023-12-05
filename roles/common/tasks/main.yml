@@ -37,7 +37,7 @@
     mode: 0700
   loop:
     - "{{ path_home }}/.config"
-    - "{{ path_nnn_bms }}"
+    # - "{{ path_nnn_bms }}"
     - "{{ path_home }}/.local"
     - "{{ path_home }}/.local/bin"
     - "{{ path_home }}/.local/share"
@@ -46,72 +46,72 @@
     - "{{ path_home }}/Playground"
     - "{{ path_projects }}"
 
-- name: Git clone/pull misc projects
-  ansible.builtin.git:
-    repo: "{{ item.url }}"
-    dest: "{{ item.name }}"
-  loop:
-    - name: "{{ path_dotfiles }}"
-      url: "{{ git_dotfiles }}"
-    - name: "{{ path_projects }}/Godis"
-      url: "{{ git_godis }}"
-    - name: "{{ path_projects }}/Kjell"
-      url: "{{ git_kjell }}"
-    - name: "{{ path_projects }}/Pyttipanna"
-      url: "{{ git_pyttipanna }}"
-    - name: "{{ path_projects }}/Skrot"
-      url: "{{ git_skrot }}"
+# - name: Git clone/pull misc projects
+#   ansible.builtin.git:
+#     repo: "{{ item.url }}"
+#     dest: "{{ item.name }}"
+#   loop:
+#     - name: "{{ path_dotfiles }}"
+#       url: "{{ git_dotfiles }}"
+#     - name: "{{ path_projects }}/Godis"
+#       url: "{{ git_godis }}"
+#     - name: "{{ path_projects }}/Kjell"
+#       url: "{{ git_kjell }}"
+#     - name: "{{ path_projects }}/Pyttipanna"
+#       url: "{{ git_pyttipanna }}"
+#     - name: "{{ path_projects }}/Skrot"
+#       url: "{{ git_skrot }}"
 
-- name: Create misc symbolic links
-  ansible.builtin.file:
-    src: "{{ item.src }}"
-    dest: "{{ item.dest }}"
-    state: link
-  loop:
-    - src: "{{ path_dotfiles }}/config/htop"
-      dest: "{{ path_home }}/.config/htop"
-    - src: "{{ path_dotfiles }}/config/pylintrc"
-      dest: "{{ path_home }}/.config/pylintrc"
-    - src: "{{ path_dotfiles }}/config/yamllint"
-      dest: "{{ path_home }}/.config/yamllint"
-    - src: "{{ path_dotfiles }}/gitconfig"
-      dest: "{{ path_home }}/.gitconfig"
-    - src: "{{ path_dotfiles }}/gitignore_global"
-      dest: "{{ path_home }}/.gitignore_global"
-    - src: "{{ path_dotfiles }}/local/share/figlet"
-      dest: "{{ path_home }}/.local/share/figlet"
-    - src: "{{ path_dotfiles }}/lynxrc"
-      dest: "{{ path_home }}/.lynxrc"
-    - src: "{{ path_dotfiles }}/pythonrc"
-      dest: "{{ path_home }}/.pythonrc"
-    - src: "{{ path_dotfiles }}/ssh/config"
-      dest: "{{ path_home }}/.ssh/config"
-    - src: "{{ path_dotfiles }}/tmux.conf"
-      dest: "{{ path_home }}/.tmux.conf"
-    - src: "{{ path_dotfiles }}/zlogin"
-      dest: "{{ path_home }}/.zlogin"
-    - src: "{{ path_dotfiles }}/zshenv"
-      dest: "{{ path_home }}/.zshenv"
-    - src: "{{ path_dotfiles }}/zshrc"
-      dest: "{{ path_home }}/.zshrc"
+# - name: Create misc symbolic links
+#   ansible.builtin.file:
+#     src: "{{ item.src }}"
+#     dest: "{{ item.dest }}"
+#     state: link
+#   loop:
+#     - src: "{{ path_dotfiles }}/config/htop"
+#       dest: "{{ path_home }}/.config/htop"
+#     - src: "{{ path_dotfiles }}/config/pylintrc"
+#       dest: "{{ path_home }}/.config/pylintrc"
+#     - src: "{{ path_dotfiles }}/config/yamllint"
+#       dest: "{{ path_home }}/.config/yamllint"
+#     - src: "{{ path_dotfiles }}/gitconfig"
+#       dest: "{{ path_home }}/.gitconfig"
+#     - src: "{{ path_dotfiles }}/gitignore_global"
+#       dest: "{{ path_home }}/.gitignore_global"
+#     - src: "{{ path_dotfiles }}/local/share/figlet"
+#       dest: "{{ path_home }}/.local/share/figlet"
+#     - src: "{{ path_dotfiles }}/lynxrc"
+#       dest: "{{ path_home }}/.lynxrc"
+#     - src: "{{ path_dotfiles }}/pythonrc"
+#       dest: "{{ path_home }}/.pythonrc"
+#     - src: "{{ path_dotfiles }}/ssh/config"
+#       dest: "{{ path_home }}/.ssh/config"
+#     - src: "{{ path_dotfiles }}/tmux.conf"
+#       dest: "{{ path_home }}/.tmux.conf"
+#     - src: "{{ path_dotfiles }}/zlogin"
+#       dest: "{{ path_home }}/.zlogin"
+#     - src: "{{ path_dotfiles }}/zshenv"
+#       dest: "{{ path_home }}/.zshenv"
+#     - src: "{{ path_dotfiles }}/zshrc"
+#       dest: "{{ path_home }}/.zshrc"
 
 
-- name: Create misc nnn bookmarks
-  ansible.builtin.file:
-    src: "{{ item.src }}"
-    dest: "{{ path_nnn_bms }}/{{ item.dest }}"
-    state: link
-    force: true
-  loop:
-    - src: "{{ path_home }}/Documents/Text"
-      dest: Documents - Text
-    - src: "{{ path_projects }}/Dotfiles"
-      dest: Projects - Dotfiles
-    - src: "{{ path_projects }}/Godis"
-      dest: Projects - Godis
-    - src: "{{ path_projects }}/Kjell/src"
-      dest: Projects - Kjell
-    - src: "{{ path_projects }}/Pyttipanna/src"
-      dest: Projects - Pyttipanna
-    - src: "{{ path_projects }}/Skrot"
-      dest: Projects - Skrot
+# - name: Create misc nnn bookmarks
+#   ansible.builtin.file:
+#     src: "{{ item.src }}"
+#     dest: "{{ path_nnn_bms }}/{{ item.dest }}"
+#     state: link
+#     force: true
+#   loop:
+#     - src: "{{ path_home }}/Documents/Text"
+#       dest: Documents - Text
+#     - src: "{{ path_projects }}/Dotfiles"
+#       dest: Projects - Dotfiles
+#     - src: "{{ path_projects }}/Godis"
+#       dest: Projects - Godis
+#     - src: "{{ path_projects }}/Kjell/src"
+#       dest: Projects - Kjell
+#     - src: "{{ path_projects }}/Pyttipanna/src"
+#       dest: Projects - Pyttipanna
+#     - src: "{{ path_projects }}/Skrot"
+#       dest: Projects - Skrot

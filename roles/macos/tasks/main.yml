@@ -10,26 +10,26 @@
     - "{{ path_home }}/Library/CloudStorage/Dropbox/Split-Brain/Text"
     - "{{ path_home }}/Storage"
 
-- name: Git clone/pull misc projects
-  ansible.builtin.git:
-    repo: "{{ item.url }}"
-    dest: "{{ item.name }}"
-  loop:
-    - name: "{{ path_projects }}/Dockerfiles"
-      url: "{{ git_dockerfiles }}"
-    - name: "{{ path_projects }}/Project-Assets"
-      url: "{{ git_projectassets }}"
+# - name: Git clone/pull misc projects
+#   ansible.builtin.git:
+#     repo: "{{ item.url }}"
+#     dest: "{{ item.name }}"
+#   loop:
+#     - name: "{{ path_projects }}/Dockerfiles"
+#       url: "{{ git_dockerfiles }}"
+#     - name: "{{ path_projects }}/Project-Assets"
+#       url: "{{ git_projectassets }}"
 
-- name: Create misc symbolic links
-  ansible.builtin.file:
-    src: "{{ item.src }}"
-    dest: "{{ item.dest }}"
-    state: link
-  loop:
-    - src: "{{ path_dotfiles }}/gnupg/gpg-agent.conf"
-      dest: "{{ path_home }}/.gnupg/gpg-agent.conf"
-    - src: "{{ path_home }}/Library/CloudStorage/Dropbox/Split-Brain/Text"
-      dest: "{{ path_home }}/Documents/Text"
+# - name: Create misc symbolic links
+#   ansible.builtin.file:
+#     src: "{{ item.src }}"
+#     dest: "{{ item.dest }}"
+#     state: link
+#   loop:
+#     - src: "{{ path_dotfiles }}/gnupg/gpg-agent.conf"
+#       dest: "{{ path_home }}/.gnupg/gpg-agent.conf"
+#     - src: "{{ path_home }}/Library/CloudStorage/Dropbox/Split-Brain/Text"
+#       dest: "{{ path_home }}/Documents/Text"
 
 - name: Delete misc files
   ansible.builtin.file:
@@ -136,20 +136,10 @@
     dest: "{{ item.dest }}"
     state: link
   loop:
-    - src: /opt/homebrew/opt/docker-compose/bin/docker-compose
-      dest: "{{ path_home }}/.docker/cli-plugins/docker-compose"
-    - src: "{{ path_dotfiles }}/hammerspoon"
-      dest: "{{ path_home }}/.hammerspoon"
     - src: "{{ path_brew }}/opt/fzf"
       dest: "{{ path_home }}/.local/share/fzf"
     - src: "{{ path_brew }}/opt/zsh-autosuggestions/share/zsh-autosuggestions"
       dest: "{{ path_home }}/.local/share/zsh-autosuggestions"
-    - src: "{{ path_dotfiles }}/vscode/keybindings.json"
-      dest: "{{ path_home }}/Library/Application Support/Code/User/keybindings.json"
-    - src: "{{ path_dotfiles }}/vscode/settings.json"
-      dest: "{{ path_home }}/Library/Application Support/Code/User/settings.json"
-    - src: "{{ path_dotfiles }}/Misc/Swedish - No Dead Keys.bundle"
-      dest: "{{ path_home }}/Library/Keyboard Layouts/Swedish - No Dead Keys.bundle"
 
 - name: Add {{ path_brew }}/bin/zsh to /etc/shells
   ansible.builtin.lineinfile:
@@ -192,11 +182,6 @@
     - defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
   changed_when: false
 
-- name: Check desktop wallpaper
-  ansible.builtin.command:
-    cmd: sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "SELECT value FROM data ORDER BY ROWID DESC LIMIT 1"
-  register: dock_wallpaper
-  changed_when: false
 
 # FIXME: Make this work for macOS Sonoma.
 #- name: Set desktop wallpaper
@@ -223,11 +208,9 @@
   ansible.builtin.command:
     cmd: code --install-extension "{{ item }}"
   loop:
-    - asvetliakov.vscode-neovim
     - bierner.markdown-mermaid
     - golang.go
     - jebbs.plantuml
-    - ms-azuretools.vscode-docker
     - ms-python.flake8
     - ms-python.pylint
     - ms-python.python
@@ -236,19 +219,18 @@
     - ms-vscode-remote.remote-ssh-edit
     - redhat.ansible
     - redhat.vscode-yaml
-    - rust-lang.rust-analyzer
   when: item not in code_extensions.stdout
   changed_when: true
 
 
-- name: Create misc nnn bookmarks
-  ansible.builtin.file:
-    src: "{{ item.src }}"
-    dest: "{{ path_nnn_bms }}/{{ item.dest }}"
-    state: link
-    force: true
-  loop:
-    - src: "{{ path_home }}/Library/CloudStorage/Dropbox/Split-Brain"
-      dest: Dropbox - Split-Brain
-    - src: "{{ path_projects }}/Ansiblebot"
-      dest: Projects - Ansiblebot
+# - name: Create misc nnn bookmarks
+#   ansible.builtin.file:
+#     src: "{{ item.src }}"
+#     dest: "{{ path_nnn_bms }}/{{ item.dest }}"
+#     state: link
+#     force: true
+#   loop:
+#     - src: "{{ path_home }}/Library/CloudStorage/Dropbox/Split-Brain"
+#       dest: Dropbox - Split-Brain
+#     - src: "{{ path_projects }}/Ansiblebot"
+#       dest: Projects - Ansiblebot
