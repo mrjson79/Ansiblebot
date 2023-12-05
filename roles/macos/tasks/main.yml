@@ -219,6 +219,7 @@
     - ms-vscode-remote.remote-ssh-edit
     - redhat.ansible
     - redhat.vscode-yaml
+    - leodevbro.blockman 
   when: item not in code_extensions.stdout
   changed_when: true
 
