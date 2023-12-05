@@ -51,6 +51,7 @@ brew_macos_work:
   - terraform
   - terraform-ls
   - yq
+  - k3d
 
 cask_macos:
   - rancher
