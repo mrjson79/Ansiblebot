@@ -1,7 +1,7 @@
 - name: Setup macOS system - Work
   hosts: macos
   vars:
-    hostname: Twoson
+    hostname: andersj-pro
     path_wallpaper: /System/Library/Desktop Pictures/Solid Colors/Stone.png
   roles:
     - common
