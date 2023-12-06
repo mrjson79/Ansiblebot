@@ -52,6 +52,7 @@ brew_macos_work:
   - terraform-ls
   - yq
   - k3d
+  - docker-credential-helper
 
 cask_macos:
   - rancher
