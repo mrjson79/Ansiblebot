@@ -140,7 +140,7 @@
       dest: "{{ path_home }}/.local/share/fzf"
     - src: "{{ path_brew }}/opt/zsh-autosuggestions/share/zsh-autosuggestions"
       dest: "{{ path_home }}/.local/share/zsh-autosuggestions"
-    - src: "{{ path_brew}}/opt/zsh-syntax-highlighting"
+    - src: "{{ path_brew}}/opt/zsh-syntax-highlighting/share/zsh-syntax-highlighting"
       dest: "{{ path_home}}/.local/share/zsh-syntax-highlighting"
 
 - name: Add {{ path_brew }}/bin/zsh to /etc/shells
