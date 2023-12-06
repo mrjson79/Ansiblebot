@@ -23,6 +23,7 @@ brew_macos:
   - wget
   - zsh
   - zsh-autosuggestions
+  - zsh-syntax-highlighting
 
 brew_macos_home:
   - cuetools
