@@ -54,6 +54,9 @@ brew_macos_work:
   - yq
   - k3d
   - docker-credential-helper
+  - hashicorp/tap/hashicorp-vagrant
+  - vagrant-manager
+
 
 cask_macos:
   - rancher
