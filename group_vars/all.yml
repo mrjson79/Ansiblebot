@@ -54,8 +54,7 @@ brew_macos_work:
   - yq
   - k3d
   - docker-credential-helper
-  - hashicorp/tap/hashicorp-vagrant
-  - vagrant-manager
+
 
 
 cask_macos:
@@ -82,87 +81,89 @@ cask_macos_work:
   - lastpass
   - microsoft-remote-desktop
   - vmware-fusion
+  - hashicorp/tap/hashicorp-vagrant
+  - vagrant-manager
 
 #cask_macos_work_root:
 #  - x
 
 
 # XXX: There is no virtual package for latest Lua, must specify "lua5.4".
-apt_ubuntu:
-  - ansible
-  - ansible-lint
-  - asciinema
-  - build-essential
-  - cuetools
-  - curl
-  - dialog
-  - dnsutils
-  - entr
-  - fd-find
-  - figlet
-  - flac
-  - flake8
-  - gawk
-  - git
-  - git-filter-repo
-  - gnupg
-  - golang
-  - html2text
-  - htop
-  - imagemagick
-  - lame
-  - less
-  - libreadline-dev
-  - lua5.4
-  - lynx
-  - nmap
-  - nnn
-  - npm
-  - openssh-server
-  - pandoc
-  - parallel
-  - pylint
-  - python-is-python3
-  - python3-pip
-  - ripgrep
-  - ruby
-  - shellcheck
-  - shntool
-  - tidy
-  - tmux
-  - tree
-  - ubuntu-standard
-  - vim-nox
-  - yamllint
-  - zsh
+# apt_ubuntu:
+#   - ansible
+#   - ansible-lint
+#   - asciinema
+#   - build-essential
+#   - cuetools
+#   - curl
+#   - dialog
+#   - dnsutils
+#   - entr
+#   - fd-find
+#   - figlet
+#   - flac
+#   - flake8
+#   - gawk
+#   - git
+#   - git-filter-repo
+#   - gnupg
+#   - golang
+#   - html2text
+#   - htop
+#   - imagemagick
+#   - lame
+#   - less
+#   - libreadline-dev
+#   - lua5.4
+#   - lynx
+#   - nmap
+#   - nnn
+#   - npm
+#   - openssh-server
+#   - pandoc
+#   - parallel
+#   - pylint
+#   - python-is-python3
+#   - python3-pip
+#   - ripgrep
+#   - ruby
+#   - shellcheck
+#   - shntool
+#   - tidy
+#   - tmux
+#   - tree
+#   - ubuntu-standard
+#   - vim-nox
+#   - yamllint
+#   - zsh
 
 #apt_ubuntu_lxc:
 #  - x
 
-apt_ubuntu_tv:
-  - abcde
-  - ffmpeg
-  - kodi
-  - sshguard
-  - svtplay-dl
-  - youtube-dl
+# apt_ubuntu_tv:
+#   - abcde
+#   - ffmpeg
+#   - kodi
+#   - sshguard
+#   - svtplay-dl
+#   - youtube-dl
 
-apt_ubuntu_vm:
-  - qemu-guest-agent
-  - ubuntu-desktop
+# apt_ubuntu_vm:
+#   - qemu-guest-agent
+#   - ubuntu-desktop
 
 
-linuxbrew_linux:
-  - ansible-language-server
-  - bash-language-server
-  - fzf
-  - lua-language-server
-  - neovim
-  - pyright
-  - rustup-init
-  - tmux-xpanes
-  - yaml-language-server
-  - zsh-autosuggestions
+# linuxbrew_linux:
+#   - ansible-language-server
+#   - bash-language-server
+#   - fzf
+#   - lua-language-server
+#   - neovim
+#   - pyright
+#   - rustup-init
+#   - tmux-xpanes
+#   - yaml-language-server
+#   - zsh-autosuggestions
 
 #linuxbrew_ubuntu:
 #  - x
