@@ -26,14 +26,8 @@ brew_macos:
   - zsh-syntax-highlighting
 
 brew_macos_home:
-  - cuetools
-  - ffmpeg
-  - flac
-  - imagemagick
-  - lame
-  - shntool
   - svtplay-dl
-  - youtube-dl
+  - youtube-dlls
 
 brew_macos_work:
   - akamai
@@ -61,15 +55,19 @@ cask_macos:
   - rancher
   - the-unarchiver
   - visual-studio-code
+  - gitkraken
 
 cask_macos_root:
   - google-chrome
 
 cask_macos_home:
-  - handbrake
-  - tor-browser
-  - transmission
-  - vlc
+  # - handbrake
+  # - tor-browser
+  # - transmission
+  # - vlc
+  - bitwarden
+  - slack
+  - duckduckgo
 
 cask_macos_home_root:
   - 1password
