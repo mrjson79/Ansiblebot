@@ -81,6 +81,7 @@ cask_macos_work:
   - vmware-fusion
   - hashicorp/tap/hashicorp-vagrant
   - vagrant-manager
+  - vagrant-vmware-utility
 
 #cask_macos_work_root:
 #  - x
