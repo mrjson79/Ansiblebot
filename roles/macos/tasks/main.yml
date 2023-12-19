@@ -222,7 +222,9 @@
     - ms-vscode-remote.remote-ssh-edit
     - redhat.ansible
     - redhat.vscode-yaml
-    - leodevbro.blockman 
+    - leodevbro.blockman
+    - oderwat.indent-rainbow
+ 
   when: item not in code_extensions.stdout
   changed_when: true
 
