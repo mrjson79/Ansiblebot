@@ -24,10 +24,11 @@ brew_macos:
   - zsh
   - zsh-autosuggestions
   - zsh-syntax-highlighting
+  - certbot
 
 brew_macos_home:
-  - svtplay-dl
-  - youtube-dlls
+  #- svtplay-dl
+  #- youtube-dlls
 
 brew_macos_work:
   - akamai
