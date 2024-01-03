@@ -48,6 +48,7 @@ brew_macos_work:
   - terraform-ls
   - yq
   - k3d
+  - k3sup
   - docker-credential-helper
 
 
