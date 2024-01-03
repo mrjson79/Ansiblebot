@@ -50,6 +50,7 @@ brew_macos_work:
   - k3d
   - k3sup
   - docker-credential-helper
+  - tmux-xpanes
 
 
 
