@@ -225,6 +225,7 @@
     - leodevbro.blockman
     - oderwat.indent-rainbow
     - matheusq94.tfs
+    - ms-vscode.powershell
  
   when: item not in code_extensions.stdout
   changed_when: true
