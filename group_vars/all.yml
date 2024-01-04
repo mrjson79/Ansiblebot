@@ -52,6 +52,7 @@ brew_macos_work:
   - docker-credential-helper
   - tmux-xpanes
   - cilium-cli
+  - guumaster/tap/hostctl
 
 
 
