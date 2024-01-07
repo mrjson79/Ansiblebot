@@ -8,6 +8,7 @@ brew_macos:
   - curl
   - dialog
   - diffutils
+  - dockutil
   - fd
   - fzf
   - gawk
@@ -25,6 +26,7 @@ brew_macos:
   - zsh-autosuggestions
   - zsh-syntax-highlighting
   - certbot
+  - ripgrep
 
 brew_macos_home:
   #- svtplay-dl
@@ -48,11 +50,7 @@ brew_macos_work:
   - terraform-ls
   - yq
   - k3d
-  - k3sup
   - docker-credential-helper
-  - tmux-xpanes
-  - cilium-cli
-  - guumaster/tap/hostctl
 
 
 
