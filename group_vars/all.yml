@@ -52,6 +52,7 @@ brew_macos_work:
   - yq
   - k3d
   - docker-credential-helper
+  - cmake
 
 
 
