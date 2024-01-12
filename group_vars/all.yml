@@ -26,8 +26,9 @@ brew_macos:
   - zsh-autosuggestions
   - zsh-syntax-highlighting
   - certbot
-  - ripgrep #perhap give this an alias and use instead of ls.
+  - ripgrep #perhaps give this an alias and use instead of ls.
   - eza
+  #- vscodium
 
 brew_macos_home:
   #- svtplay-dl
