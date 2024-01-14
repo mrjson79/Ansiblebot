@@ -31,6 +31,7 @@ brew_macos:
   #- vscodium
 
 brew_macos_home:
+  - zellij
   #- svtplay-dl
   #- youtube-dlls
 
