@@ -55,6 +55,7 @@ brew_macos_work:
   - k3d
   - docker-credential-helper
   - cmake
+  - gpg
 
 
 
