@@ -56,6 +56,7 @@ brew_macos_work:
   - docker-credential-helper
   - cmake
   - gpg
+  - opentofu
 
 
 
@@ -90,6 +91,7 @@ cask_macos_work:
   - hashicorp/tap/hashicorp-vagrant
   - vagrant-manager
   - vagrant-vmware-utility
+  - warp
 
 #cask_macos_work_root:
 #  - x
