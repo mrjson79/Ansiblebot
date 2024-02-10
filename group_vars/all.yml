@@ -28,10 +28,11 @@ brew_macos:
   - certbot
   - ripgrep #perhaps give this an alias and use instead of ls.
   - eza
-  #- vscodium
+  - vscodium
 
 brew_macos_home:
   - zellij
+  - mcfly
   #- svtplay-dl
   #- youtube-dlls
 
