@@ -93,6 +93,7 @@ cask_macos_work:
   - vagrant-manager
   - vagrant-vmware-utility
   - warp
+  - drawio
 
 #cask_macos_work_root:
 #  - x
