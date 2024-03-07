@@ -58,6 +58,8 @@ brew_macos_work:
   - cmake
   - gpg
   - opentofu
+  - ipcalc
+  - sipcalc
 
 
 
@@ -227,11 +229,11 @@ pip_common:
 #pip_macos_home:
 #  - x
 
-pip_macos_work:
-  - kubernetes
-  - opensearch-py
-  - pika
-  - prometheus-client
+# pip_macos_work:
+#   - kubernetes
+#   - opensearch-py
+#   - pika
+#   - prometheus-client
 
 #pip_ubuntu:
 #  - x
