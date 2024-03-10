@@ -35,6 +35,7 @@ brew_macos_home:
   - zellij
   - mcfly
   - clusterctl
+  - opentofu
   #- svtplay-dl
   #- youtube-dlls
 
