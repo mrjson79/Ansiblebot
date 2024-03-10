@@ -29,10 +29,12 @@ brew_macos:
   - ripgrep #perhaps give this an alias and use instead of ls.
   - eza
   - vscodium
+  
 
 brew_macos_home:
   - zellij
   - mcfly
+  - clusterctl
   #- svtplay-dl
   #- youtube-dlls
 
@@ -80,6 +82,8 @@ cask_macos_home:
   - bitwarden
   - slack
   - duckduckgo
+  - zed
+  - sublime-text
 
 cask_macos_home_root:
   - 1password
