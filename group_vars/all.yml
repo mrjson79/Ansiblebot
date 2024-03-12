@@ -63,6 +63,7 @@ brew_macos_work:
   - opentofu
   - ipcalc
   - sipcalc
+  - terraform-docs
 
 
 
