@@ -64,6 +64,9 @@ brew_macos_work:
   - ipcalc
   - sipcalc
   - terraform-docs
+  - pre-commit
+  - tfsec
+  - checkov
 
 
 
