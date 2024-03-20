@@ -67,6 +67,7 @@ brew_macos_work:
   - pre-commit
   - tfsec
   - checkov
+  - docker-slim
 
 
 
@@ -105,6 +106,7 @@ cask_macos_work:
   - vagrant-vmware-utility
   - warp
   - drawio
+  - libreoffice
 
 #cask_macos_work_root:
 #  - x
