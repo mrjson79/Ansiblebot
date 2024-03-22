@@ -68,6 +68,7 @@ brew_macos_work:
   - tfsec
   - checkov
   - docker-slim
+  - pwgen
 
 
 
