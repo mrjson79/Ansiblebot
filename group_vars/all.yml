@@ -58,7 +58,6 @@ brew_macos_work:
   - yq
   - k3d
   - docker-credential-helper
-  - cmake
   - gpg
   - opentofu
   - ipcalc
@@ -69,6 +68,7 @@ brew_macos_work:
   - checkov
   - docker-slim
   - pwgen
+  - openconnect
 
 
 
