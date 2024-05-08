@@ -79,6 +79,8 @@
       dest: "{{ path_brew }}/Library/Taps/homebrew/homebrew-cask"
     - repo: https://github.com/plasma-umass/homebrew-scalene.git
       dest: "{{ path_brew }}/Library/Taps/plasma-umass/homebrew-scalene"
+    - repo: https://github.com/siderolabs/homebrew-tap.git
+      dest: "{{ path_brew }}/Library/Taps/siderolabs/homebrew-tap"
 
 - name: Upgrade all Homebrew packages
   community.general.homebrew:
