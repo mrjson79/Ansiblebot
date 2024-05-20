@@ -18,6 +18,7 @@ brew_macos:
   - less
   - openssh
   - shellcheck
+  - neovim
   - tree
   - vim
   - watch
@@ -93,8 +94,8 @@ cask_macos_home:
   - zed
   - sublime-text
 
-cask_macos_home_root:
-  - 1password
+# cask_macos_home_root:
+#   - 1password
 
 cask_macos_work:
   - bitwarden
@@ -109,6 +110,7 @@ cask_macos_work:
   - warp
   - drawio
   - libreoffice
+  - obsidian
 
 
 #cask_macos_work_root:
