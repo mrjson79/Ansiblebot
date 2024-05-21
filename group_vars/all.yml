@@ -111,6 +111,7 @@ cask_macos_work:
   - drawio
   - libreoffice
   - obsidian
+  - notion
 
 
 #cask_macos_work_root:
