@@ -90,6 +90,8 @@ cask_macos_home:
   - duckduckgo
   - zed
   - sublime-text
+  - joplin
+  - garmin-express
 
 # cask_macos_home_root:
 #   - 1password
@@ -108,7 +110,7 @@ cask_macos_work:
   - drawio
   - libreoffice
 
-# cask_macos_work_root:
+#cask_macos_work_root:
 #  - x
 
 # XXX: There is no virtual package for latest Lua, must specify "lua5.4".
