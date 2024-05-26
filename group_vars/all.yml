@@ -92,6 +92,7 @@ cask_macos_home:
   - sublime-text
   - joplin
   - garmin-express
+  - notion
 
 # cask_macos_home_root:
 #   - 1password
