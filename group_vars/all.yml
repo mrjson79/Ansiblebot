@@ -30,7 +30,6 @@ brew_macos:
   - ripgrep #perhaps give this an alias and use instead of ls.
   - eza
   - vscodium
-  
 
 brew_macos_home:
   - zellij
@@ -72,8 +71,6 @@ brew_macos_work:
   - openconnect
   - talosctl
 
-
-
 cask_macos:
   - rancher
   - the-unarchiver
@@ -110,13 +107,9 @@ cask_macos_work:
   - warp
   - drawio
   - libreoffice
-  - obsidian
-  - notion
 
-
-#cask_macos_work_root:
+# cask_macos_work_root:
 #  - x
-
 
 # XXX: There is no virtual package for latest Lua, must specify "lua5.4".
 # apt_ubuntu:
@@ -182,7 +175,6 @@ cask_macos_work:
 #   - qemu-guest-agent
 #   - ubuntu-desktop
 
-
 # linuxbrew_linux:
 #   - ansible-language-server
 #   - bash-language-server
@@ -206,7 +198,6 @@ cask_macos_work:
 
 #linuxbrew_ubuntu_vm:
 #  - x
-
 
 # go_common:
 #   - github.com/go-delve/delve/cmd/dlv@latest
@@ -236,10 +227,8 @@ cask_macos_work:
 #go_ubuntu_vm:
 #  - x
 
-
 pip_common:
   - requests
-
 # pip_macos:
 #   - docker
 
