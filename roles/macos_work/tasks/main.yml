@@ -7,7 +7,7 @@
     - repo: https://github.com/hashicorp/homebrew-tap
       dest: "{{ path_brew }}/Library/Taps/hashicorp/homebrew-tap"
     - repo: https://github.com/guumaster/hostctl
-      dest: "{{ path_brew}}/Library/Taps/guumaster/hostctl"
+      dest: "{{ path_brew }}/Library/Taps/guumaster/hostctl"
 
 
 - name: Install Homebrew packages from list 'brew_macos_work'
