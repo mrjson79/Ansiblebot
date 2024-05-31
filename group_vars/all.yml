@@ -92,6 +92,8 @@ cask_macos_home:
   - sublime-text
   - garmin-express
   - notion
+  - mullvadvpn
+  - mullvad-browser
 
 # cask_macos_home_root:
 #   - 1password
