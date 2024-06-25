@@ -70,6 +70,7 @@ brew_macos_work:
   - pwgen
   - openconnect
   - talosctl
+  
 
 cask_macos:
   - rancher
