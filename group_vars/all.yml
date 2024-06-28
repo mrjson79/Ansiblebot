@@ -70,7 +70,8 @@ brew_macos_work:
   - pwgen
   - openconnect
   - talosctl
-  
+  - nushell
+
 
 cask_macos:
   - rancher
@@ -113,6 +114,7 @@ cask_macos_work:
   - drawio
   - libreoffice
   - mullvad-browser
+
 
 #cask_macos_work_root:
 #  - x
