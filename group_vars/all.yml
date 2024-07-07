@@ -31,7 +31,6 @@ brew_macos:
   - eza
   - vscodium
   - nushell
-  - ollama
 
 brew_macos_home:
   - zellij
@@ -97,6 +96,7 @@ cask_macos_home:
   - mullvadvpn
   - mullvad-browser
   - wave
+  - ollama
 
 # cask_macos_home_root:
 #   - 1password
