@@ -37,6 +37,7 @@ brew_macos_home:
   - mcfly
   - clusterctl
   - opentofu
+  - git-extras
   #- svtplay-dl
   #- youtube-dlls
 
