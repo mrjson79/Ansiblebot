@@ -74,7 +74,6 @@ brew_macos_work:
   - talosctl
 
 cask_macos:
-  - rancher
   - the-unarchiver
   - visual-studio-code
   - gitkraken
@@ -83,10 +82,6 @@ cask_macos_root:
   - google-chrome
 
 cask_macos_home:
-  # - handbrake
-  # - tor-browser
-  # - transmission
-  # - vlc
   - bitwarden
   - slack
   - duckduckgo
