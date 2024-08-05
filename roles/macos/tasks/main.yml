@@ -250,6 +250,7 @@
     - hediet.vscode-drawio
     - kelvin.vscode-sshfs
     - kestra-io.kestra
+    - continue.continue
 
   when: item not in codium_extensions.stdout
   changed_when: true
