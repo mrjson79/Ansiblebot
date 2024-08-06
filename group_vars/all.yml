@@ -111,6 +111,7 @@ cask_macos_work:
   - drawio
   - libreoffice
   - mullvad-browser
+  - orbstack
 
 #cask_macos_work_root:
 #  - x
