@@ -95,8 +95,9 @@ cask_macos_home:
   - ollama
   - orbstack
 
-# cask_macos_home_root:
-#   - 1password
+cask_macos_home_root:
+  - 1password
+  - 1password-cli
 
 cask_macos_work:
   - bitwarden
@@ -113,7 +114,6 @@ cask_macos_work:
   - libreoffice
   - mullvad-browser
   - orbstack
-
 
 #cask_macos_work_root:
 #  - x
