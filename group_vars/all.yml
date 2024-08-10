@@ -38,8 +38,8 @@ brew_macos_home:
   - clusterctl
   - opentofu
   - git-extras
-  #- svtplay-dl
-  #- youtube-dlls
+  - docker-compose
+  - docker-completion
 
 brew_macos_work:
   - akamai
@@ -93,6 +93,7 @@ cask_macos_home:
   - mullvad-browser
   - wave
   - ollama
+  - orbstack
 
 # cask_macos_home_root:
 #   - 1password
