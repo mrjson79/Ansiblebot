@@ -31,6 +31,7 @@ brew_macos:
   - eza
   - vscodium
   - nushell
+  - oh-my-posh
 
 brew_macos_home:
   - zellij
@@ -77,6 +78,7 @@ cask_macos:
   - the-unarchiver
   - visual-studio-code
   - gitkraken
+  - zullip
 
 cask_macos_root:
   - google-chrome
@@ -114,6 +116,8 @@ cask_macos_work:
   - libreoffice
   - mullvad-browser
   - orbstack
+  - kui
+  - raycast
 
 #cask_macos_work_root:
 #  - x
