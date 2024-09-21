@@ -78,7 +78,7 @@ cask_macos:
   - the-unarchiver
   - visual-studio-code
   - gitkraken
-  - zullip
+  - zulip
 
 cask_macos_root:
   - google-chrome
