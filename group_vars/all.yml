@@ -118,6 +118,7 @@ cask_macos_work:
   - orbstack
   - kui
   - raycast
+  - rectangle
 
 #cask_macos_work_root:
 #  - x
