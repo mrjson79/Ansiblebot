@@ -1,37 +1,6 @@
 brew_macos:
-  - ansible
-  - ansible-language-server
-  - ansible-lint
-  - asciinema
-  - btop
-  - coreutils
-  - curl
-  - dialog
-  - diffutils
-  - dockutil
-  - fd
-  - fzf
-  - gawk
-  - git
-  - git-filter-repo
   - grep
-  - less
-  - openssh
-  - shellcheck
-  - neovim
-  - tree
-  - vim
-  - watch
-  - wget
-  - zsh
-  - zsh-autosuggestions
-  - zsh-syntax-highlighting
-  - certbot
-  - ripgrep #perhaps give this an alias and use instead of ls.
-  - eza
-  - vscodium
-  - nushell
-  - oh-my-posh
+  - vscodium #installed on work
 
 brew_macos_home:
   - zellij
@@ -43,17 +12,11 @@ brew_macos_home:
   - docker-completion
 
 brew_macos_work:
-  - akamai
   - awscli
   - hashicorp/tap/vault
-  - helm
-  - jq
   - kubectx
-  - kubernetes-cli
-  - lastpass-cli
-  - openstackclient
+  - kubernetes-cli  
   - packer
-  - prometheus
   - rbw
   - salt-lint
   - terraform
