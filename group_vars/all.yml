@@ -1,31 +1,23 @@
 brew_macos:
   - grep
-  - vscodium #installed on work
 
 brew_macos_home:
-  - zellij
-  - mcfly
-  - clusterctl
-  - opentofu
   - git-extras
   - docker-compose
   - docker-completion
 
 brew_macos_work:
   - awscli
-  - hashicorp/tap/vault
   - kubectx
   - kubernetes-cli  
   - packer
   - rbw
   - salt-lint
-  - terraform
   - terraform-ls
   - yq
   - k3d
   - docker-credential-helper
   - gpg
-  - opentofu
   - ipcalc
   - sipcalc
   - terraform-docs
@@ -51,11 +43,9 @@ cask_macos_home:
   - slack
   - duckduckgo
   - zed
-  - sublime-text
   - garmin-express
   - notion
   - mullvadvpn
-  - mullvad-browser
   - wave
   - ollama
   - orbstack
@@ -67,7 +57,6 @@ cask_macos_home_root:
 cask_macos_work:
   - bitwarden
   - slack
-  - duckduckgo
   - lastpass
   - microsoft-remote-desktop
   - vmware-fusion
@@ -77,7 +66,6 @@ cask_macos_work:
   - warp
   - drawio
   - libreoffice
-  - mullvad-browser
   - orbstack
   - kui
   - raycast
